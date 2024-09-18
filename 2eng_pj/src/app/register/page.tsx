@@ -38,7 +38,7 @@ const Register = () => {
               <input
                 {...register("username", { required: true })}
                 placeholder="Введите имя пользователя"
-                className="mt-1 block w-96 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300 ease-in-out"
+                className="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300 ease-in-out text-gray-900"
               />
               {errors.username && (
                 <span className="text-red-500 text-sm">
@@ -57,7 +57,7 @@ const Register = () => {
                   pattern: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/,
                 })}
                 placeholder="Введите email"
-                className="mt-1 block w-96 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300 ease-in-out"
+                className="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300 ease-in-out text-gray-900"
               />
               {errors.email && (
                 <span className="text-red-500 text-sm">
@@ -74,7 +74,7 @@ const Register = () => {
                 type="password"
                 {...register("password", { required: true, minLength: 6 })}
                 placeholder="Введите пароль"
-                className="mt-1 block w-96 p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300 ease-in-out"
+                className="mt-1 block w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-blue-500 focus:border-blue-500 transition duration-300 ease-in-out text-gray-900"
               />
               {errors.password && (
                 <span className="text-red-500 text-sm">
